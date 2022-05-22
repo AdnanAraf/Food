@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:3900px;
+}
+
+
+.back{
+    background-color: white;
+    height: 100px;
+    width:100%;
+    position:fixed;
+    top:0;
+    margin-top: -2rem;
+    box-shadow: 0 0 10px black;
+}
+.header{
+    position: absolute;
+    margin-top: 2rem;
+    animation-name: right;
+    animation-duration: 2s;
+    margin-left: 3rem;
+}
+@keyframes right{
+    0%{
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.header h1{
+    font-family: 'Dancing Script';
+    font-size: 40px;
+}
+
+.header span{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    margin-top: 2rem;
+    position: absolute;
+}
+.navbar{
+    margin-left: 35rem;
+    margin-top: 2.5rem;
+    position: absolute;
+ 
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style:none;
+    padding:10px 50px;  
+  
+}
+.navbar ul li:hover{
+    background-color: rgba(0, 128, 0, 0.733);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+
+/***************************************Middle*****************************************/
+.middle{
+    background-color:black;
+    width:100%;
+    height:850px;
+    padding:30px;
+    
+}
+
+.head1{
+    color:white;
+
+    margin-left: 2rem;
+    margin-top: -25rem;
+}
+.head1 h4{
+    color:orange;
+    font-size: 25px;
+    font-family: 'Roboto';
+    margin-left: 3rem;
+}
+.head1 h1{
+    font-size: 65px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    color:orangered;
+    font-family: 'Roboto';
+}
+.head1 p{
+    width:30rem;
+    font-size: 19px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Roboto';
+}
+.img {
+    margin-left: 45rem;
+    margin-top: 8rem;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+ 
+    0%,25%,50%{
+        background: url('home-img-1.png') no-repeat ;
+        height: 600px;
+        
+    }
+    60%, 75%,90%,100%{
+        background: url('home-img-2.png') no-repeat;
+        height: 600px;
+     
+    }
+   
+}
+.button{
+   margin-top:3rem;
+    margin-left: 12rem;
+}
+.button button{
+    padding:10px 25px;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: bold;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.button button:hover{
+    padding:10px 40px;
+    background-color:green;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/*************************************Dishes******************************************/
+.middle1{
+    background-color: rgba(128, 128, 128, 0.267);
+    height: 2780px;
+    width:100%;
+    padding:30px;
+}
+.head2{
+text-align: center;
+margin-top: 2rem;
+}
+.head2 h4{
+    font-size: 25px;
+    color: green;
+}
+.head2 h2{
+    font-size: 35px;
+    margin-top: 0.5rem;
+    color:rgba(19, 13, 37, 0.931);
+    font-family: 'Roboto';
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+.grid1{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+}
+.grid1 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid1 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid1 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex1{
+    display: flex;
+}
+ .flex1 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex1 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+
+/**************************grid2*********************************/
+.grid2{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+}
+.grid2 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid2 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid2 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex2{
+    display: flex;
+}
+ .flex2 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex2 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+/****************************************grid3*************************/
+
+.grid3{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+}
+.grid3 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid3 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid3 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex3{
+    display: flex;
+}
+ .flex3 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex3 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+/*****************************grid4*****************************/
+.grid4{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+    margin-top: 4rem;
+}
+.grid4 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid4 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid4 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex4{
+    display: flex;
+    margin-top: rem;
+}
+ .flex4 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex4 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+
+              /*****************************grid5******************************/
+
+
+.grid5{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+    margin-top: 4rem;
+}
+.grid5 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid5 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid5 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex5{
+    display: flex;
+}
+ .flex5 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex5 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+/*********************************grid6**************************************/
+
+.grid6{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651) , 0 0 10px rgba(0, 0, 0, 0.651);
+    margin-top: 4rem;
+}
+.grid6 img{
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+.grid6 h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color:rgba(19, 13, 37, 0.931);
+}
+.grid6 h4{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 26px;
+    color:green;
+}
+.flex6{
+    display: flex;
+    margin-top: 1.6rem;
+}
+ .flex6 button {
+   height:42px;
+   width:140px;
+   margin-top: 3.5rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background-color: rgba(19, 13, 37, 0.931);
+   color:white;
+   border:blue;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Roboto';
+   font-size: 16px;
+}
+.flex6 button:hover{
+    width:160px;
+    background-color: green;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+/***********************************About Us*****************************************/
+.about{
+    background-color: white;
+    height:800px;
+     width:100%;
+    margin-top: 5rem;
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.383), 0 0 10px rgba(0, 0, 0, 0.383);
+}
+.head3{
+    text-align: center;
+    margin-top: 2rem;
+}
+.head3 h2{
+    font-family: 'Roboto';
+    font-size: 35px; 
+}
+.head3 h4{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color:green;
+}
+.flex1{
+    display: flex;
+}
+.flex1 img{
+    height:550px;
+    width:700px;
+    margin-top: 3rem;
+}
+.head4 h2{
+  font-family: 'Nunito';
+  margin-left: 2rem;
+  margin-top: 8rem;
+  font-size: 45px;
+}
+.head4 p{
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-left: 2rem;
+    font-weight: 500;
+} 
+.icon{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 5rem;
+}
+.icon1{
+    border: 1px solid gray;
+    height: 75px;
+    width:250px;
+    background-color: rgba(128, 128, 128, 0.37);
+    border-radius: 10px;
+    margin-left: 30rem;
+    margin-top: -8rem;
+    cursor: pointer;
+}
+.icon1 i{
+    margin-left: 2rem;
+    margin-top: 1rem;
+   color: green;
+   font-size: 40px;
+}
+.icon1 h4{
+    text-align: center;
+    margin-top: -2.2rem;
+    margin-left: 3.5rem;
+    font-size: 20px;
+}
+
+
+/***************************************icon2*******************************/
+
+.icon2{
+    border: 1px solid gray;
+    height: 75px;
+    width:240px;
+    background-color: rgba(128, 128, 128, 0.37);
+    border-radius: 10px;
+margin-left: 3rem;
+    margin-top: -8rem;
+    cursor: pointer;
+}
+.icon2 i{
+    margin-left: 2rem;
+    margin-top: 1rem;
+   color: green;
+   font-size: 40px;
+}
+.icon2 h4{
+    text-align: center;
+    margin-top: -2.2rem;
+    margin-left: 3.5rem;
+    font-size: 20px;
+}
+/**********************************icon**************************************/
+.icon3{
+    border: 1px solid gray;
+    height: 75px;
+    width:240px;
+    background-color: rgba(128, 128, 128, 0.37);
+    border-radius: 10px;
+margin-left: 3rem;
+    margin-top: -8rem;
+    cursor: pointer;
+}
+.icon3 h4{
+    margin-left: 3.5rem;
+   font-size: 25px;
+   margin-top: 1.5rem;
+ 
+}
+.icon3 span{
+    margin-top: 1rem;
+    float: left;
+    font-size: 35px;
+    margin-left: 1.5rem;
+}
+
+/*********************************Our Menu************************************/
+.food h1{
+    margin-top: 5rem;
+}
+.menu h1{
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+}
+.menu h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 35px;
+}
+.grid7{
+    margin-top: -12rem;
+  position: static;
+}
+
+.grid8 img{
+    margin-left: 25.3rem;
+    margin-top: 10.3rem;
+   
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top:210rem;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 30px;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.grid8 .menu1{
+    height:210px;
+    width:640px;
+    background-color:black;
+     margin-left: 25.3rem;
+     margin-top: -65.5rem;
+   
+    }
+
+    .menu1 h4{
+        color:orangered;
+        font-size: 22px;
+        font-family: 'Dancing Script', cursive;
+        margin-top: 1rem;
+     
+    }
+    .menu1 h1{
+        color:orange;
+        text-align: center;
+         font-size: 30px;
+         margin-top: 65rem; 
+}
+.order{
+    display: flex; 
+}
+.order h5{
+ margin-left: 20rem;
+ font-size: 25px;
+ color:rgb(215, 234, 10);
+ margin-top: 3rem;
+
+}
+.order button{
+    margin-top:2rem;
+    font-size: 22px;
+    color:white;
+    margin-left: 2rem;
+    padding:8px 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:green;
+}
+
+.order button:hover{
+    width:145px;
+}
